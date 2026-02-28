@@ -113,6 +113,7 @@ public class MapGenerator : MonoBehaviour
             SpawnTile(x, y, size, start);
 
         SetAllTilesInteractable(true);
+        yappy.SayPassiveIfIdle();
     }
 
     void SpawnTile(int x, int y, float size, float start)
@@ -244,7 +245,7 @@ public class MapGenerator : MonoBehaviour
             yap.gameObject.SetActive(false);
             yapper.gameObject.SetActive(false);
             timerText.gameObject.SetActive(false);
-            congrats.text=("Congrats On Making It To Board "+(gridSize-3)+"!");
+            congrats.text=("Congrats On Making It To Board "+(gridSize-4)+"!");
             congrats2.text=("With a Time Of "+timer.timerText.text+" No Less");
             congrats.gameObject.SetActive(true);
             congrats2.gameObject.SetActive(true);
@@ -258,8 +259,8 @@ public class MapGenerator : MonoBehaviour
         PlayerPrefs.SetInt("LastScore", gridSize-4);
         PlayerPrefs.SetFloat("LastTime", timer.time);
         PlayerPrefs.Save();
-        if (gridSize-3<=PlayerPrefs.GetInt("LB_Score_3", 0)){
-        if (gridSize-3==PlayerPrefs.GetInt("LB_Score_3", 0)&&timer.time<PlayerPrefs.GetInt("LB_Time_3", 0)) {
+        if (gridSize-4<=PlayerPrefs.GetInt("LB_Score_3", 0)){
+        if (gridSize-4==PlayerPrefs.GetInt("LB_Score_3", 0)&&timer.time<PlayerPrefs.GetInt("LB_Time_3", 0)) {
         gridSize=5;
         SceneManager.LoadScene("NameEntry");
         }else {
