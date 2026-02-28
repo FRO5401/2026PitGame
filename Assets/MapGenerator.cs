@@ -15,11 +15,14 @@ public class MapGenerator : MonoBehaviour
     public TMP_Text congrats;
     public TMP_Text congrats2;
     public TMP_Text yap;
+    public TMP_Text feed;
     public GameObject cookie;
     public GameObject yapper;
     public Button feeder;
     public GameObject bar;
+    public GameObject bar2;
     public GameObject assface;
+    public GameObject assface1;
     public GameObject assface2;
 
     float totalSize;
@@ -85,7 +88,11 @@ public class MapGenerator : MonoBehaviour
             cookie.gameObject.SetActive(gridSize >= 6);
             feeder.gameObject.SetActive(false);
             assface.gameObject.SetActive(false);
+            assface1.gameObject.SetActive(false);
+            assface2.gameObject.SetActive(false);
+            feed.gameObject.SetActive(false);
             bar.SetActive(false);
+            bar2.SetActive(false);
 
             if (gridSize == 6)
                 yappy.CookieRead();
@@ -96,7 +103,11 @@ public class MapGenerator : MonoBehaviour
             cookie.gameObject.SetActive(true);
             feeder.gameObject.SetActive(true);
             assface.gameObject.SetActive(true);
+            assface1.gameObject.SetActive(true);
+            assface2.gameObject.SetActive(true);
+            feed.gameObject.SetActive(true);
             bar.SetActive(true);
+            bar2.SetActive(true);
 
             if (!assfaceTriggered)
             {
@@ -241,8 +252,11 @@ public class MapGenerator : MonoBehaviour
             cookie.gameObject.SetActive(false);
             feeder.gameObject.SetActive(false);
             bar.SetActive(false);
+            bar2.SetActive(false);
             assface.gameObject.SetActive(false);
+            assface1.gameObject.SetActive(false);
             assface2.gameObject.SetActive(false);
+            feed.gameObject.SetActive(false);
             bombUI.gameObject.SetActive(false);
             yap.gameObject.SetActive(false);
             yapper.gameObject.SetActive(false);

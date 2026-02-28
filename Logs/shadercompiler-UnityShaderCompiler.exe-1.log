@@ -2,6 +2,11 @@ Base path: 'C:/Program Files/Unity/Hub/Editor/6000.0.38f1/Editor/Data', plugins 
 Cmd: initializeCompiler
 
 Cmd: compileComputeKernel
-  insize=1237 file=Packages/com.unity.rendering.light-transport/Tests/Editor/UnifiedRayTracing/TraceRays.urtshader kernel=ComputeIndirectDispatchDims ppOnly=0 stripLineD=0 buildPlatform=13 km=<UNITY_VERSION=60000038> pKW=UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_CUBEMAP_ARRAY UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 SHADER_API_MOBILE UNITY_LIGHTMAP_DLDR_ENCODING UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH uKW=SHADER_STAGE_COMPUTE platform=vulkan flags=268439552 reqs=50241 forceDXC=0 forceFXC=0 ok=1 outsize=4665
+  insize=1237 file=Packages/com.unity.rendering.light-transport/Tests/Editor/UnifiedRayTracing/TraceRays.urtshader kernel=MainRayGenShader ppOnly=0 stripLineD=0 buildPlatform=13 km=<UNITY_VERSION=60000038> pKW=UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_CUBEMAP_ARRAY UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 SHADER_API_MOBILE UNITY_LIGHTMAP_DLDR_ENCODING UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH uKW=SHADER_STAGE_COMPUTE platform=vulkan flags=268439552 reqs=50241 forceDXC=0 forceFXC=0 ok=1 outsize=45407
 
-Cmd: shutdown
+Cmd: compileComputeKernel
+  insize=1237 file=Packages/com.unity.rendering.light-transport/Tests/Editor/UnifiedRayTracing/TraceRays.urtshader kernel=ComputeIndirectDispatchDims ppOnly=0 stripLineD=0 buildPlatform=13 km=<UNITY_VERSION=60000038> pKW=UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_NO_CUBEMAP_ARRAY UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 SHADER_API_MOBILE UNITY_LIGHTMAP_DLDR_ENCODING SHADER_API_GLES30 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH uKW=SHADER_STAGE_COMPUTE platform=gles3 flags=268439552 reqs=50241 forceDXC=0 forceFXC=0 ok=1 outsize=2227
+
+Cmd: compileComputeKernel
+  insize=1237 file=Packages/com.unity.rendering.light-transport/Tests/Editor/UnifiedRayTracing/TraceRays.urtshader kernel=MainRayGenShader ppOnly=0 stripLineD=0 buildPlatform=13 km=<UNITY_VERSION=60000038> pKW=UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_NO_CUBEMAP_ARRAY UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 SHADER_API_MOBILE UNITY_LIGHTMAP_DLDR_ENCODING SHADER_API_GLES30 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH uKW=SHADER_STAGE_COMPUTE platform=gles3 flags=268439552 reqs=50241 forceDXC=0 forceFXC=0 ok=1 outsize=28340
+
