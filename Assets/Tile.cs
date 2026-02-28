@@ -127,15 +127,16 @@ public class Tile : MonoBehaviour,
         if (!map.gameStarted)
             map.FirstClick(this);
 
-        RevealInternal();
-
         if (isBomb)
-        {
-            button.image.sprite = bombtile;
-            button.image.color = Color.red;
-            map.GameOver();
-            return;
-        }
+{
+    revealed = true;
+    button.image.sprite = bombtile;
+    button.image.color = Color.red;
+    map.GameOver();
+    return;
+}
+
+RevealInternal();
 
         if (adjacentBombs == 0)
             map.FloodReveal(this);
@@ -147,8 +148,8 @@ public class Tile : MonoBehaviour,
 
         button.image.sprite = open;
 
-        map.CheckWin();
         map.currentTiles--;
+        map.CheckWin();
 
         if (hasCookie)
         {

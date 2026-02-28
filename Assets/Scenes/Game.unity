@@ -303,6 +303,7 @@ MonoBehaviour:
   feeder: {fileID: 874869660}
   bar: {fileID: 476070435}
   assface: {fileID: 719231975}
+  assface2: {fileID: 1553939061}
   gameStarted: 0
   gameOver: 0
   cookiesCollected: 0
@@ -881,7 +882,6 @@ MonoBehaviour:
   - '"Har Har HarHarHar", or something like that.'
   - Sweeping "it". And by it, well, let's just say, mines.
   - RoadBlocks?
-  passiveDelay: 8
 --- !u!114 &694170512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1068,7 +1068,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 500}
+  m_AnchoredPosition: {x: 0, y: 400}
   m_SizeDelta: {x: 600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &743250580

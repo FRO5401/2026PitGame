@@ -20,6 +20,7 @@ public class MapGenerator : MonoBehaviour
     public Button feeder;
     public GameObject bar;
     public GameObject assface;
+    public GameObject assface2;
 
     float totalSize;
 
@@ -241,6 +242,7 @@ public class MapGenerator : MonoBehaviour
             feeder.gameObject.SetActive(false);
             bar.SetActive(false);
             assface.gameObject.SetActive(false);
+            assface2.gameObject.SetActive(false);
             bombUI.gameObject.SetActive(false);
             yap.gameObject.SetActive(false);
             yapper.gameObject.SetActive(false);
