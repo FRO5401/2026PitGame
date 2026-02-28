@@ -192,7 +192,7 @@ public class MapGenerator : MonoBehaviour
 {
     if (gameOver) return;
 
-    if  (currentTiles!=bombCount) return;
+    if  (currentTiles!=bombCount-1) return;
 
     PlayerWins();
 }
